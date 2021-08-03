@@ -72,10 +72,6 @@ jspm_packages/
 # next.js build output
 .next
 
-# Typescript
-dist/
-dist-web/
-build/
 
 # Dev Server Static Output
 public/
