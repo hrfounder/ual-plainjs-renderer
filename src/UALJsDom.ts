@@ -461,7 +461,7 @@ export class UALJsDom {
     const button = document.createElement('button')
     button.id = 'ual-button'
     button.className = 'ual-button-gen' // TODO: determine if this is needed
-    button.innerHTML = 'UAL Login'
+    button.innerHTML = 'LOGIN & PLAY'
 
     return button
   }
