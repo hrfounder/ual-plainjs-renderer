@@ -115,7 +115,7 @@ export class UALJs extends UAL {
         );
         const sessionAuthenticator = authenticators.find(
           (authenticator) =>
-            authenticator.constructor.name === authenticatorName
+            authenticator.getName() === authenticatorName
         ) as Authenticator;
 
         const accountName =
@@ -145,7 +145,7 @@ export class UALJs extends UAL {
     localStorage.setItem(UALJs.SESSION_EXPIRATION_KEY, invalidateAt.toString());
     localStorage.setItem(
       UALJs.SESSION_AUTHENTICATOR_KEY,
-      authenticator.constructor.name
+      authenticator.getName()
     );
 
     try {
