@@ -18,8 +18,7 @@
     "scripts": {
         "build": "tsc --build tsconfig.json",
         "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
-        "test": "jest",
-        "prepare": "yarn build"
+        "test": "jest"
     },
     "dependencies": {
         "universal-authenticator-library": "0.3.0"
